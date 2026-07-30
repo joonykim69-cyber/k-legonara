@@ -11,6 +11,7 @@ assets.
 ## Repository structure
 
 - `docs/blueprint/` — product and platform blueprints
+- `docs/product/` — product brief, MVP scope, decisions, risks, and execution roadmap
 - `docs/design/` — brand, UX, UI, and design-system documentation
 - `docs/architecture/` — technical architecture documentation
 - `docs/adr/` — architecture decision records
