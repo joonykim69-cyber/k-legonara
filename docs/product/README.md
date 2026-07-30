@@ -6,12 +6,12 @@
 
 | 항목 | 상태 |
 |---|---|
-| 단계 | Phase 0. Product Definition |
+| 단계 | Phase 1. Context and Validation 준비 |
 | 기준일 | 2026-07-30 |
-| Product Brief | Draft |
-| Primary User | 결정 필요 |
-| Lighthouse Workflow | 결정 필요 |
-| MVP Scope | 권장안 기준 Draft |
+| Product Brief | Validation Baseline |
+| Primary User | 승인 · 검증 필요 |
+| Lighthouse Workflow | Option A 승인 |
+| MVP Scope | Option A 기준 Draft |
 | 코드 구현 | 승인 전 시작 금지 |
 
 ## 문서 지도
@@ -21,6 +21,8 @@
 | [`PRODUCT_BRIEF.md`](PRODUCT_BRIEF.md) | 제품 목적, 사용자 가설, 문제, 가치, 성공 기준 |
 | [`LIGHTHOUSE_WORKFLOW_OPTIONS.md`](LIGHTHOUSE_WORKFLOW_OPTIONS.md) | 첫 수직 흐름 후보 비교와 권장안 |
 | [`MVP_SCOPE_DRAFT.md`](MVP_SCOPE_DRAFT.md) | 권장 Lighthouse 기준 MVP 범위와 완료 조건 |
+| [`RESEARCH_PLAN.md`](RESEARCH_PLAN.md) | 사용자 인터뷰, 업무 관찰과 문제 가설 검증 계획 |
+| [`MVP_PRD.md`](MVP_PRD.md) | Option A의 제품 요구사항과 구현 전 승인 게이트 |
 | [`EXECUTION_ROADMAP.md`](EXECUTION_ROADMAP.md) | 승인 게이트 중심의 실행 순서 |
 | [`RISK_REGISTER.md`](RISK_REGISTER.md) | 주요 제품·기술·운영 위험 |
 | [`DECISION_LOG.md`](DECISION_LOG.md) | 확정 결정과 결정 대기 항목 |

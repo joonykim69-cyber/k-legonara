@@ -2,8 +2,8 @@
 
 | 항목 | 내용 |
 |---|---|
-| 버전 | 0.1.0 |
-| 상태 | Draft · Option A 승인 전 확정 금지 |
+| 버전 | 0.2.0 |
+| 상태 | Draft · Option A 검증 승인 · 구현 승인 전 |
 | Lighthouse | Asset-to-Knowledge Twin |
 | 대상 환경 | Responsive Web · Desktop First |
 

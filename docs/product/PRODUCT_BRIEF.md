@@ -2,8 +2,8 @@
 
 | 항목 | 내용 |
 |---|---|
-| 버전 | 0.1.0 |
-| 상태 | Draft · Decision Required |
+| 버전 | 0.2.0 |
+| 상태 | Approved for Phase 1 Validation |
 | 작성일 | 2026-07-30 |
 | 단계 | Phase 0. Product Definition |
 | 기준 문서 | Master Blueprint 원본, Design Guideline v1, Design Architecture & Workflow |
@@ -69,7 +69,7 @@ K-Legonara는 분리된 설계 자산, 부품 정보와 조직 지식을 신뢰 
 - 결제, 물류와 공개 Marketplace 없이도 폐쇄형 파일럿이 가능하다.
 - 제조 실행까지 확장하기 전 자산과 지식의 신뢰 기반을 먼저 만들 수 있다.
 
-이는 승인된 결정이 아니라 인터뷰 대상 선정을 위한 권장 가설이다.
+2026-07-30 사용자의 명시적 승인으로 Phase 1의 우선 검증 대상으로 채택했다. 문제 가설 자체는 아직 사용자 근거로 검증되지 않았다.
 
 ## 5. 문제 가설
 
@@ -157,10 +157,10 @@ K-Legonara는 하나의 Project 안에서 자산을 등록하고, AI로 메타�
 ## 12. Brief 승인 게이트
 
 - [ ] Product Owner가 지정됐다.
-- [ ] Primary User가 한 문장으로 확정됐다.
-- [ ] 사용자 인터뷰 또는 관찰 계획이 승인됐다.
+- [x] Primary User가 한 문장으로 확정됐다.
+- [x] 사용자 인터뷰 또는 관찰 계획이 작성됐다.
 - [ ] 핵심 문제와 기존 대안이 확인됐다.
-- [ ] Lighthouse Workflow가 선택됐다.
+- [x] Lighthouse Workflow가 선택됐다.
 - [ ] MVP 범위와 비범위가 승인됐다.
 - [ ] 성공 지표와 Baseline 측정 계획이 승인됐다.
 - [ ] 데이터 사용 권리와 보안 제약이 확인됐다.

@@ -2,8 +2,8 @@
 
 | 항목 | 내용 |
 |---|---|
-| 버전 | 0.1.0 |
-| 상태 | Decision Required |
+| 버전 | 0.2.0 |
+| 상태 | Option A Approved for Phase 1 Validation |
 | 목적 | 첫 번째 검증 가능한 End-to-End 제품 흐름 선택 |
 
 ## 1. 선택 원칙
@@ -120,6 +120,8 @@ Project
 **Option A. Asset-to-Knowledge Twin**을 첫 Lighthouse로 권장한다.
 
 Option B와 비슷한 초기 검증 가능성을 유지하면서 Digital Twin이라는 K-Legonara의 차별성을 포함한다. Option C의 제조 실행은 Option A에서 검증한 Identity, Version, Metadata와 Relationship 기반 위에 다음 단계로 추가한다.
+
+2026-07-30 사용자 승인으로 Option A를 Phase 1 검증 대상으로 채택했다. 이는 MVP 구현 승인이 아니며 문제 인터뷰, 업무 관찰과 데이터 제약 확인을 먼저 수행한다.
 
 ## 7. 결정 게이트
 

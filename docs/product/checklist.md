@@ -15,9 +15,9 @@
 ## 결정 필요
 
 - [ ] Product Owner 지정
-- [ ] Primary User 승인
+- [x] Primary User 승인
 - [ ] 첫 인터뷰 대상 모집
-- [ ] Lighthouse Workflow 승인
+- [x] Lighthouse Workflow 승인
 - [ ] 첫 자산 형식 승인
 - [ ] 파일럿 데이터와 사용 권리 확인
 - [ ] 성공 지표 Baseline 측정 방법 승인
@@ -25,7 +25,9 @@
 
 ## 승인 후
 
-- [ ] 사용자 인터뷰와 업무 관찰
+- [x] 사용자 인터뷰와 업무 관찰 계획 작성
+- [ ] 사용자 인터뷰와 업무 관찰 실행
+- [x] MVP PRD 초안 작성
 - [ ] MVP Scope v1 확정
 - [ ] Sitemap, Task Flow와 State Matrix
 - [ ] Domain Model과 Permission Matrix

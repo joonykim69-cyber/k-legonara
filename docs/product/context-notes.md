@@ -37,7 +37,16 @@
 
 ## 다음 세션의 시작점
 
-1. Product Owner와 Primary User 승인 여부를 확인한다.
-2. Lighthouse Option A 승인 여부를 확인한다.
-3. 승인되면 사용자 인터뷰 스크립트와 Research Plan을 작성한다.
-4. 실제 데이터가 없으면 합법적인 합성 Fixture 사양을 정의한다.
+1. Product Owner와 Research Owner를 지정한다.
+2. 첫 자산 형식과 합법적인 Fixture를 결정한다.
+3. 참여자 모집과 사용자 인터뷰를 실행한다.
+4. Baseline과 Evidence Matrix를 작성한다.
+5. 연구 결과로 MVP Scope v1을 유지, 수정 또는 폐기한다.
+
+## 2026-07-30 승인 기록
+
+- 사용자가 Primary User 권장안인 Enterprise Product Engineer 또는 Digital Twin Engineer를 Phase 1 검증 대상으로 승인했다.
+- 사용자가 Lighthouse Option A인 Asset-to-Knowledge Twin을 Phase 1 검증 대상으로 승인했다.
+- 이 승인은 문제 가설의 실증 완료나 코드 구현 승인이 아니다.
+- Product Owner, 첫 자산 형식, 파일럿 데이터 권리, AI 배포 방식, Tenant 모델과 목표 기간은 아직 결정되지 않았다.
+- 사용자 검증 계획과 MVP PRD 초안을 작성했다.
