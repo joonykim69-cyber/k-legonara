@@ -2,6 +2,12 @@
 
 K-Legonara is an AI, digital twin, manufacturing, marketplace, and knowledge platform initiative.
 
+## Documentation
+
+Start with the [documentation index](docs/README.md) for the blueprint archive,
+design baseline, workflow, handoff guidance, source provenance, and reference
+assets.
+
 ## Repository structure
 
 - `docs/blueprint/` — product and platform blueprints
