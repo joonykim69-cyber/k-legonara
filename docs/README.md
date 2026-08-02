@@ -7,6 +7,7 @@
 | 영역 | 위치 | 역할 |
 |---|---|---|
 | Product | [`product/`](product/) | Product Brief, Lighthouse, MVP 범위, 위험과 실행 로드맵 |
+| Implementation | [`implementation/`](implementation/) | 현재 Thin Slice의 구현 계획, 체크리스트와 컨텍스트 노트 |
 | Master Blueprint | [`blueprint/`](blueprint/) | 제품, 플랫폼, 서비스 및 기술 아키텍처 원본 |
 | Design | [`design/`](design/) | 브랜드, UX/UI, 디자인 시스템, 제작·인계 워크플로 |
 | Architecture | [`architecture/`](architecture/) | 향후 독립 기술 아키텍처 문서 |
