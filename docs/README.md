@@ -6,6 +6,7 @@
 
 | 영역 | 위치 | 역할 |
 |---|---|---|
+| Product | [`product/`](product/) | Product Brief, Lighthouse, MVP 범위, 위험과 실행 로드맵 |
 | Master Blueprint | [`blueprint/`](blueprint/) | 제품, 플랫폼, 서비스 및 기술 아키텍처 원본 |
 | Design | [`design/`](design/) | 브랜드, UX/UI, 디자인 시스템, 제작·인계 워크플로 |
 | Architecture | [`architecture/`](architecture/) | 향후 독립 기술 아키텍처 문서 |
@@ -14,10 +15,12 @@
 
 ## 권장 읽기 순서
 
-1. [`design/K-Legonara_Design_Guideline_v1.md`](design/K-Legonara_Design_Guideline_v1.md)에서 브랜드와 UI 방향을 확인한다.
-2. [`design/K-Legonara_Design_Architecture_and_Workflow.md`](design/K-Legonara_Design_Architecture_and_Workflow.md)에서 디자인 생산, 협업, Figma, AI 보조 제작과 프론트엔드 인계 기준을 확인한다.
+1. [`product/README.md`](product/README.md)에서 현재 제품 기획 단계와 승인 게이트를 확인한다.
+2. [`product/PRODUCT_BRIEF.md`](product/PRODUCT_BRIEF.md)와 [`product/LIGHTHOUSE_WORKFLOW_OPTIONS.md`](product/LIGHTHOUSE_WORKFLOW_OPTIONS.md)에서 확정 사실, 가설과 결정 필요 항목을 확인한다.
 3. [`blueprint/README.md`](blueprint/README.md)에서 Master Blueprint 원본의 실제 수록 범위와 버전 관계를 확인한다.
-4. 중요한 변경은 `adr/`에 독립적인 결정 기록으로 남긴다.
+4. [`design/K-Legonara_Design_Guideline_v1.md`](design/K-Legonara_Design_Guideline_v1.md)에서 브랜드와 UI 방향을 확인한다.
+5. [`design/K-Legonara_Design_Architecture_and_Workflow.md`](design/K-Legonara_Design_Architecture_and_Workflow.md)에서 디자인 생산, 협업, Figma, AI 보조 제작과 프론트엔드 인계 기준을 확인한다.
+6. 중요한 변경은 `adr/`에 독립적인 결정 기록으로 남긴다.
 
 ## 문서 상태 원칙
 
