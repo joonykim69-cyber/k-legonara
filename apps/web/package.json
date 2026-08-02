@@ -1,0 +1,27 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "fixture": "node scripts/create-fixture.mjs",
+    "test:unit": "node --test src/domain/twin-workflow.test.ts",
+    "typecheck": "tsc --noEmit",
+    "verify": "pnpm run fixture && pnpm run test:unit && pnpm run typecheck && pnpm run build"
+  },
+  "dependencies": {
+    "@google/model-viewer": "^4.3.1",
+    "next": "16.2.12",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}
