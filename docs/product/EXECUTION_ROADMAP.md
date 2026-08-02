@@ -2,6 +2,12 @@
 
 이 로드맵은 날짜 약속이 아니라 승인 게이트 순서다. 팀 규모와 예산이 확정되기 전에는 달력 일정을 고정하지 않는다.
 
+## Lean Solo 실행 방식
+
+1인 개발에서는 Phase를 큰 선행 프로젝트로 운영하지 않는다. `가설 하나 → 가장 얇은 구현 → Self Test → 기록 → 다음 반복`을 기본 단위로 사용한다. 외부 인터뷰와 정식 Prototype 연구는 가능한 시점에 추가하지만 첫 Thin Vertical Slice를 막지 않는다.
+
+다만 고객 데이터, 보안 경계, 비가역적인 외부 쓰기와 비용이 큰 아키텍처 결정은 구현 전에 별도로 확인한다.
+
 ## Phase 0. Product Definition
 
 ### 작업
@@ -125,8 +131,8 @@
 
 ## 즉시 다음 작업
 
-1. Product Owner 지정.
-2. Lighthouse Option 승인.
-3. Primary User 인터뷰 대상 모집.
-4. 첫 자산 형식과 Fixture 결정.
-5. Issue Milestone `Phase 0 – Product Definition` 생성.
+1. GLB 합성 Fixture 하나를 준비한다.
+2. Asset Upload부터 Twin Draft 생성까지의 최소 Task Flow를 작성한다.
+3. 최소 Domain Object와 State Matrix를 정의한다.
+4. Happy Path와 복구 경로 하나의 Acceptance Test를 작성한다.
+5. 첫 Thin Vertical Slice를 구현한다.

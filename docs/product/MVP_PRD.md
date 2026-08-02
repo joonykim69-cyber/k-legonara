@@ -2,8 +2,8 @@
 
 | 항목 | 내용 |
 |---|---|
-| 버전 | 0.1.0 |
-| 상태 | Draft · Research Validation Required · Not Implementation Ready |
+| 버전 | 0.2.0 |
+| 상태 | Lean Solo Baseline · Thin Vertical Slice Ready |
 | 작성일 | 2026-07-30 |
 | Primary User | Enterprise Product Engineer · Digital Twin Engineer |
 | Lighthouse | Asset-to-Knowledge Twin |
@@ -13,7 +13,7 @@
 
 이 PRD는 Option A의 제품 결과, 기능 요구사항, 상태, 권한과 승인 게이트를 정의한다.
 
-사용자 검증, 자산 형식, 데이터 권리와 기술 아키텍처가 확정되기 전에는 구현 계약으로 사용하지 않는다. 확인되지 않은 항목은 `TBD` 또는 `Decision Required`로 유지한다.
+이 문서는 첫 Thin Vertical Slice의 구현 기준으로 사용한다. 구현 중 발견한 사실은 Decision Log와 Context Notes에 짧게 기록하고 다음 반복에서 갱신한다.
 
 ## 2. 제품 결과
 
@@ -88,7 +88,7 @@ Workspace 선택
 | ID | 요구사항 | 우선순위 | 수용 기준 |
 |---|---|---|---|
 | FR-001 | 사용자는 권한이 있는 Workspace와 Project만 열 수 있어야 한다 | Must | 역할별 허용·거부 테스트가 통과한다 |
-| FR-002 | Editor 이상은 허용된 형식의 자산 하나를 등록할 수 있어야 한다 | Must | 성공, 형식 오류, 크기 오류, 취소와 재시도를 확인한다 |
+| FR-002 | Editor 이상은 GLB 자산 하나를 등록할 수 있어야 한다 | Must | 성공, 형식 오류, 크기 오류, 취소와 재시도를 확인한다 |
 | FR-003 | 시스템은 원본 Hash, Source, Uploader와 등록 시간을 기록해야 한다 | Must | Asset Detail과 Audit Event에서 확인할 수 있다 |
 | FR-004 | 시스템은 제한된 Metadata 필드의 AI 제안과 근거 정보를 제공해야 한다 | Must | 필드별 제안값, 모델·Prompt 버전과 처리 상태가 표시된다 |
 | FR-005 | 사용자는 AI 제안을 필드별로 수정, 승인 또는 거절할 수 있어야 한다 | Must | 최종값과 결정 이력이 분리돼 저장된다 |
@@ -98,11 +98,11 @@ Workspace 선택
 | FR-009 | AI Assistant는 Citation과 불충분한 근거 상태를 표시해야 한다 | Must | 답, Source Link, 권한 필터와 근거 부족 상태를 테스트한다 |
 | FR-010 | Owner는 핵심 생성, 변경, 승인과 실패 이벤트를 추적할 수 있어야 한다 | Must | Actor, Time, Object, Action과 Result가 기록된다 |
 | FR-011 | 시스템은 핵심 비정상 상태에서 복구 경로를 제공해야 한다 | Must | 실패, 지연, 취소, 권한 없음과 부분 성공 상태를 검증한다 |
-| FR-012 | 사용자는 최소 Preview 또는 Thumbnail로 자산을 식별할 수 있어야 한다 | Should | 3D Preview 결정 전 대체 경험을 테스트한다 |
+| FR-012 | 사용자는 GLB 읽기 전용 Preview로 자산을 식별할 수 있어야 한다 | Must | 회전, 확대·축소와 Reset을 제공하고 편집은 제외한다 |
 
 ## 7. Metadata 요구사항
 
-첫 자산 형식과 Domain Schema가 결정될 때까지 필드 목록은 Proposed다.
+첫 자산 형식은 GLB다. 다음 필드 목록은 첫 합성 Fixture의 최소 Schema로 사용하고 구현 중 필요할 때만 추가한다.
 
 | 필드 | 입력 주체 | 검토 | 비고 |
 |---|---|---|---|
@@ -113,7 +113,7 @@ Workspace 선택
 | Version | 사용자 또는 연동 | 필수 | 기존 ID 보존 여부 결정 |
 | Lifecycle Status | 사용자 | 필수 | Draft, Reviewed, Approved, Archived |
 | Component Identifier | AI 또는 사용자 | 조건부 | Domain Schema에 따라 결정 |
-| Material | AI 또는 사용자 | 조건부 | 첫 자산 형식에 따라 결정 |
+| Material | AI 또는 사용자 | 조건부 | GLB에 포함된 Material이 있을 때만 사용 |
 | Dimensions | AI 또는 사용자 | 조건부 | 단위와 허용 오차 필요 |
 | Tags | AI 또는 사용자 | 선택 | 통제 어휘 여부 결정 |
 
@@ -236,7 +236,7 @@ AI 제안과 사람이 승인한 정보는 색상만으로 구분하지 않는�
 
 ### Performance and Reliability
 
-- 업로드 크기, AI 처리 시간, 검색 응답과 3D Preview 예산은 첫 자산 형식 결정 후 수치화한다.
+- 업로드 크기, AI 처리 시간, 검색 응답과 3D Preview 예산은 첫 합성 Fixture 측정 후 수치화한다.
 - 장시간 작업은 비동기 상태와 재진입 경로를 제공한다.
 - 동일 파일 재등록과 중복 요청의 처리 정책을 정의한다.
 - 핵심 Workflow에는 구조화 로그와 Trace ID를 적용한다.
@@ -277,27 +277,27 @@ AI 제안과 사람이 승인한 정보는 색상만으로 구분하지 않는�
 
 | ID | 결정 | 영향 |
 |---|---|---|
-| D-001 | Product Owner와 실행 책임자 | 승인과 일정 |
-| D-002 | 첫 자산 형식 | 업로드, Preview, Metadata와 성능 |
-| D-003 | 합법적인 Fixture 또는 파일럿 데이터 | 연구와 테스트 |
-| D-004 | 3D Preview의 MVP 포함 여부 | UX와 기술 위험 |
-| D-005 | AI 배포 모델 | 데이터 경계, 비용과 지연 |
-| D-006 | Single 또는 Multi-Tenant 파일럿 | 권한과 격리 테스트 |
+| D-001 | 1인 개발자가 Product와 Research를 겸임 | Accepted |
+| D-002 | GLB와 JSON Metadata | Accepted |
+| D-003 | 프로젝트가 직접 만든 합성 Fixture | Accepted |
+| D-004 | GLB 읽기 전용 Preview | Accepted |
+| D-005 | 비민감 합성 데이터만 관리형 외부 AI API | Accepted |
+| D-006 | 단일 사용자·단일 Workspace | Accepted |
 | D-007 | Twin 승인 권한 | Permission Matrix |
-| D-008 | 목표 Baseline과 기간 | Release Gate |
+| D-008 | 첫 목표는 Happy Path와 복구 경로 Acceptance Test 통과 | Accepted |
 
 ## 16. 구현 준비 게이트
 
-- [ ] Phase 1 사용자 연구의 유효 세션이 5개 이상 완료됐다.
-- [ ] 핵심 문제 가설이 실제 사례와 비용으로 검증됐다.
-- [ ] 첫 자산 형식과 합법적인 Fixture가 승인됐다.
-- [ ] MVP Scope v1과 성공 지표가 승인됐다.
+- [x] Product와 Research 책임자는 1인 개발자가 겸임한다.
+- [x] 첫 자산 형식과 합법적인 합성 Fixture 정책이 승인됐다.
+- [x] Lean Solo MVP Scope와 첫 성공 기준이 승인됐다.
 - [ ] Task Flow, State Matrix와 Permission Matrix가 승인됐다.
 - [ ] 최소 Domain Model과 데이터 분류가 승인됐다.
-- [ ] AI Evaluation Dataset과 Review Rubric이 준비됐다.
-- [ ] Threat Model과 Tenant 격리 전략이 검토됐다.
-- [ ] 접근성, 성능과 관측성 예산이 수치화됐다.
-- [ ] Product Owner, Engineering Owner와 목표 기간이 지정됐다.
+- [ ] 합성 AI Fixture와 Review Assertion이 준비됐다.
+- [ ] 단일 Workspace 권한 경계와 고객 데이터 미사용을 확인했다.
+- [ ] Happy Path와 복구 경로 하나의 Acceptance Test가 작성됐다.
+
+외부 사용자 인터뷰, Multi-Tenant, 정식 성능 예산과 전체 Threat Model은 첫 Thin Vertical Slice의 선행 조건이 아니며 다음 반복에서 필요에 따라 추가한다.
 
 ## 17. 추적성
 

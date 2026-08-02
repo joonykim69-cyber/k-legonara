@@ -2,8 +2,8 @@
 
 | 항목 | 내용 |
 |---|---|
-| 버전 | 0.2.0 |
-| 상태 | Draft · Option A 검증 승인 · 구현 승인 전 |
+| 버전 | 0.3.0 |
+| 상태 | Lean Solo Baseline · Thin Vertical Slice 착수 가능 |
 | Lighthouse | Asset-to-Knowledge Twin |
 | 대상 환경 | Responsive Web · Desktop First |
 
@@ -95,22 +95,23 @@
 
 ## 5. Acceptance Gate
 
-- [ ] Primary User 5명 이상의 문제 인터뷰 또는 동등한 관찰 근거가 있다.
-- [ ] 첫 자산 형식과 합법적인 Fixture가 확정됐다.
+- [x] 첫 자산 형식은 GLB이며 JSON Metadata와 선택적 PNG Thumbnail을 사용한다.
+- [x] 프로젝트가 직접 만든 합성 Fixture만 사용한다.
 - [ ] 핵심 Task Flow와 State Matrix가 승인됐다.
 - [ ] Twin과 Knowledge의 최소 Domain Model이 승인됐다.
-- [ ] AI Evaluation Dataset과 Review Rubric이 정의됐다.
-- [ ] 권한과 Tenant 격리 테스트가 정의됐다.
-- [ ] Task Completion, Time on Task와 Trust Baseline이 측정됐다.
+- [ ] 최소 AI Fixture와 Review Assertion이 정의됐다.
+- [x] 첫 파일럿은 단일 사용자·단일 Workspace다.
+- [ ] Happy Path와 복구 경로 하나의 Acceptance Test가 통과한다.
 - [ ] Blocker 수준의 접근성 또는 보안 문제가 없다.
-- [ ] 제조 확장 여부를 판단할 학습 결과가 기록됐다.
+- [ ] 구현 중 발견한 학습과 다음 결정이 기록됐다.
 
-## 6. Open Questions
+## 6. 확정 기본값과 이후 질문
 
-- 첫 파일 형식은 단순 이미지·PDF, glTF, OBJ, STEP 중 무엇인가.
-- 3D Preview는 MVP 필수인가, Metadata와 Thumbnail로 대체 가능한가.
+- 첫 파일 형식은 GLB다.
+- 3D Preview는 읽기 전용으로 포함한다.
+- 초기 AI는 비민감 합성 데이터만 관리형 외부 API로 처리한다.
+- 첫 파일럿은 단일 사용자·단일 Workspace다.
 - AI 추출 대상 필드는 어떤 Domain Schema를 따르는가.
 - 고객이 이미 사용하는 PLM 또는 DAM의 ID를 보존해야 하는가.
 - Entity Merge와 Version Conflict를 MVP에서 어디까지 처리하는가.
-- 파일럿은 Single Tenant인가, Multi-Tenant 격리를 실제 검증하는가.
-- AI 모델은 외부 API, 사설 배포 또는 Hybrid 중 무엇인가.
+- 실제 고객 데이터, Multi-Tenant와 Private AI는 파일럿 이후 다시 결정한다.

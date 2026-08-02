@@ -6,13 +6,14 @@
 
 | 항목 | 상태 |
 |---|---|
-| 단계 | Phase 1. Context and Validation 준비 |
-| 기준일 | 2026-07-30 |
-| Product Brief | Validation Baseline |
+| 단계 | Lean Solo Thin Vertical Slice 준비 |
+| 기준일 | 2026-08-02 |
+| Product Brief | Lean Solo Baseline |
 | Primary User | 승인 · 검증 필요 |
 | Lighthouse Workflow | Option A 승인 |
-| MVP Scope | Option A 기준 Draft |
-| 코드 구현 | 승인 전 시작 금지 |
+| Owner | 1인 개발자가 Product와 Research 겸임 |
+| MVP Scope | Option A Lean Solo Baseline |
+| 코드 구현 | 첫 Thin Vertical Slice 착수 가능 |
 
 ## 문서 지도
 
@@ -38,14 +39,20 @@
 
 가설을 Confirmed로 승격할 때는 근거와 승인자를 [`DECISION_LOG.md`](DECISION_LOG.md)에 기록한다.
 
-## Phase 0 완료 게이트
+## Lean Solo 운영 원칙
 
-다음 조건을 모두 만족하기 전에는 제품 코드 구현을 시작하지 않는다.
+- 정식 연구 조직과 5명 이상 인터뷰는 초기 구현의 선행 조건이 아니다.
+- 한 번에 구체적인 과업 하나와 가장 얇은 End-to-End 흐름만 구현한다.
+- 직접 만든 합성 Fixture와 자동 Acceptance Test로 먼저 검증한다.
+- 외부 피드백은 가능한 시점에 1–3명 단위로 수집하고 다음 반복에 반영한다.
+- 데이터 권리, 보안, 외부 쓰기와 비용이 큰 결정은 간소화 대상에서 제외한다.
 
-- Primary User가 한 문장으로 확정됐다.
-- 해결할 핵심 문제가 관찰 또는 인터뷰 근거와 연결됐다.
-- Lighthouse Workflow 하나가 선택됐다.
-- MVP 범위와 비범위가 승인됐다.
-- 성공 지표와 측정 방법이 정의됐다.
-- 데이터, 보안, AI, 3D 성능의 주요 제약이 확인됐다.
-- 실행 책임자와 초기 일정 범위가 지정됐다.
+## Thin Vertical Slice 착수 게이트
+
+다음 최소 조건만 만족하면 첫 구현을 시작할 수 있다.
+
+- Primary User와 Lighthouse Workflow가 정해졌다.
+- 첫 과업과 성공·실패 상태가 한 문장으로 정의됐다.
+- 합법적인 합성 GLB Fixture가 준비됐다.
+- 최소 Task Flow, Domain Object와 Acceptance Test가 정의됐다.
+- 고객 데이터와 비가역적인 외부 쓰기를 사용하지 않는다.

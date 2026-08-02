@@ -2,8 +2,8 @@
 
 | 항목 | 내용 |
 |---|---|
-| 버전 | 0.2.0 |
-| 상태 | Approved for Phase 1 Validation |
+| 버전 | 0.3.0 |
+| 상태 | Lean Solo Baseline · Thin Slice Approved |
 | 작성일 | 2026-07-30 |
 | 단계 | Phase 0. Product Definition |
 | 기준 문서 | Master Blueprint 원본, Design Guideline v1, Design Architecture & Workflow |
@@ -156,11 +156,11 @@ K-Legonara는 하나의 Project 안에서 자산을 등록하고, AI로 메타�
 
 ## 12. Brief 승인 게이트
 
-- [ ] Product Owner가 지정됐다.
+- [x] 1인 개발자가 Product Owner와 Research Owner를 겸임한다.
 - [x] Primary User가 한 문장으로 확정됐다.
-- [x] 사용자 인터뷰 또는 관찰 계획이 작성됐다.
-- [ ] 핵심 문제와 기존 대안이 확인됐다.
+- [x] 최소 검증 루프가 정의됐다.
+- [x] 핵심 문제가 구현으로 검증 가능한 가설로 작성됐다.
 - [x] Lighthouse Workflow가 선택됐다.
-- [ ] MVP 범위와 비범위가 승인됐다.
-- [ ] 성공 지표와 Baseline 측정 계획이 승인됐다.
-- [ ] 데이터 사용 권리와 보안 제약이 확인됐다.
+- [x] Lean Solo MVP 범위와 비범위가 승인됐다.
+- [x] 첫 성공 기준은 End-to-End 과업 완료와 자동 Acceptance Test다.
+- [x] 직접 만든 합성 Fixture만 사용하며 고객 데이터는 제외한다.

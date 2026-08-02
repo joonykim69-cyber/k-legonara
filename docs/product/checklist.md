@@ -14,24 +14,32 @@
 
 ## 결정 필요
 
-- [ ] Product Owner 지정
+- [x] 1인 개발자가 Product Owner와 Research Owner를 겸임
 - [x] Primary User 승인
-- [ ] 첫 인터뷰 대상 모집
+- [ ] 선택적 외부 피드백 후보 1–3명 확보
 - [x] Lighthouse Workflow 승인
-- [ ] 첫 자산 형식 승인
-- [ ] 파일럿 데이터와 사용 권리 확인
-- [ ] 성공 지표 Baseline 측정 방법 승인
-- [ ] 팀 Capacity와 목표 기간 확인
+- [x] 첫 자산 형식은 GLB로 승인
+- [x] 직접 만든 합성 Fixture만 사용하는 데이터 정책 승인
+- [x] Acceptance Test와 Self Test를 첫 측정 방법으로 승인
+- [x] 1인 개발 Capacity와 반복 단위 실행 방식 승인
 
 ## 승인 후
 
 - [x] 사용자 인터뷰와 업무 관찰 계획 작성
 - [ ] 사용자 인터뷰와 업무 관찰 실행
 - [x] MVP PRD 초안 작성
-- [ ] MVP Scope v1 확정
+- [x] Lean Solo MVP Scope Baseline 확정
 - [ ] Sitemap, Task Flow와 State Matrix
 - [ ] Domain Model과 Permission Matrix
 - [ ] Prototype과 사용자 검증
 - [ ] Architecture, Security와 AI Evaluation 문서
 - [ ] Milestone과 Issue Backlog
 - [ ] Thin Vertical Slice 구현
+
+## 2026-08-02 Lean Solo 전환
+
+- [x] 1인 개발자가 Product Owner와 Research Owner를 겸임
+- [x] 첫 자산 형식, Preview, AI와 Tenant 기본값 확정
+- [x] Research Plan을 비차단형 최소 검증 루프로 축소
+- [x] MVP 구현 준비 게이트를 1인 개발 기준으로 조정
+- [x] 관련 문서 정합성과 Markdown 검증
